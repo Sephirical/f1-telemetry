@@ -5,32 +5,32 @@ class LapHistory extends Model {
   @PrimaryKey
   @AllowNull(false)
   @Column(DataType.BIGINT.UNSIGNED)
-  public session_uid: number;
+  declare session_uid: number;
 
   @PrimaryKey
   @AllowNull(false)
   @Column(DataType.TINYINT.UNSIGNED)
-  public index: number;
+  declare index: number;
 
   @PrimaryKey
   @AllowNull(false)
   @Column(DataType.TINYINT.UNSIGNED)
-  public lap_num: number;
+  declare lap_num: number;
 
   @Column(DataType.INTEGER.UNSIGNED)
-  public lap_time: number;
+  declare lap_time: number;
 
   @Column(DataType.SMALLINT.UNSIGNED)
-  public sector1_time: number;
+  declare sector1_time: number;
 
   @Column(DataType.SMALLINT.UNSIGNED)
-  public sector2_time: number;
+  declare sector2_time: number;
 
   @Column(DataType.SMALLINT.UNSIGNED)
-  public sector3_time: number;
+  declare sector3_time: number;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public lap_valid: number;
+  declare lap_valid: number;
 }
 
 export default LapHistory;

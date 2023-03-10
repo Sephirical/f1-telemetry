@@ -6,85 +6,85 @@ class LapData extends Model {
   @AllowNull(false)
   @AutoIncrement
   @Column(DataType.BIGINT.UNSIGNED)
-  declare public id: number;
+  declare id: number;
   
   @Column(DataType.BIGINT.UNSIGNED)
-  public session_uid: number;
+  declare session_uid: number;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public index: number;
+  declare index: number;
 
   @Column(DataType.INTEGER.UNSIGNED)
-  public last_laptime: number;
+  declare last_laptime: number;
 
   @Column(DataType.INTEGER.UNSIGNED)
-  public current_laptime: number;
+  declare current_laptime: number;
 
   @Column(DataType.SMALLINT.UNSIGNED)
-  public sector1_time: number;
+  declare sector1_time: number;
 
   @Column(DataType.SMALLINT.UNSIGNED)
-  public sector2_time: number;
+  declare sector2_time: number;
 
   @Column(DataType.FLOAT)
-  public lap_distance: number;
+  declare lap_distance: number;
 
   @Column(DataType.FLOAT)
-  public total_distance: number;
+  declare total_distance: number;
 
   @Column(DataType.FLOAT)
-  public safetycar_delta: number;
+  declare safetycar_delta: number;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public car_position: number;
+  declare car_position: number;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public currentlap_num: number;
+  declare currentlap_num: number;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public pit_status: number;
+  declare pit_status: number;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public num_pitstops: number;
+  declare num_pitstops: number;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public sector: number;
+  declare sector: number;
 
   @Column(DataType.BOOLEAN)
-  public currentlap_invalid: boolean;
+  declare currentlap_invalid: boolean;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public penalties: number;
+  declare penalties: number;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public warnings: number;
+  declare warnings: number;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public num_unserved_drivethrough_pens: number;
+  declare num_unserved_drivethrough_pens: number;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public num_unserved_stopgo_pens: number;
+  declare num_unserved_stopgo_pens: number;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public grid_position: number;
+  declare grid_position: number;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public driver_status: number;
+  declare driver_status: number;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public result_status: number;
+  declare result_status: number;
 
   @Column(DataType.BOOLEAN)
-  public pitlane_timer_active: boolean;
+  declare pitlane_timer_active: boolean;
 
   @Column(DataType.SMALLINT.UNSIGNED)
-  public pitlane_time: number;
+  declare pitlane_time: number;
 
   @Column(DataType.SMALLINT.UNSIGNED)
-  public pitstop_timer: number;
+  declare pitstop_timer: number;
 
   @Column(DataType.BOOLEAN)
-  public pitstop_serve_pen: boolean;
+  declare pitstop_serve_pen: boolean;
 }
 
 export default LapData;

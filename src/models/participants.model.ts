@@ -5,39 +5,39 @@ class Participants extends Model {
   @PrimaryKey
   @AllowNull(false)
   @Column(DataType.BIGINT.UNSIGNED)
-  public session_uid: number;
+  declare session_uid: number;
 
   @PrimaryKey
   @AllowNull(false)
   @Column(DataType.TINYINT.UNSIGNED)
-  public index: number;
+  declare index: number;
 
   @Column(DataType.BOOLEAN)
-  public is_ai: boolean;
+  declare is_ai: boolean;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public driver_id: number;
+  declare driver_id: number;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public network_id: number;
+  declare network_id: number;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public team_id: number;
+  declare team_id: number;
 
   @Column(DataType.BOOLEAN)
-  public is_my_team: boolean;
+  declare is_my_team: boolean;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public race_number: number;
+  declare race_number: number;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public nationality: number;
+  declare nationality: number;
 
   @Column(DataType.STRING(48))
-  public name: string;
+  declare name: string;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public telemetry: number;
+  declare telemetry: number;
 }
 
 export default Participants;

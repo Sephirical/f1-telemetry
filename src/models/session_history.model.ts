@@ -5,24 +5,24 @@ class SessionHistory extends Model {
   @PrimaryKey
   @AllowNull(false)
   @Column(DataType.BIGINT.UNSIGNED)
-  public session_uid: number;
+  declare session_uid: number;
 
   @PrimaryKey
   @AllowNull(false)
   @Column(DataType.TINYINT.UNSIGNED)
-  public index: number;
+  declare index: number;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public best_lap_num: number;
+  declare best_lap_num: number;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public best_sector1_lap_num: number;
+  declare best_sector1_lap_num: number;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public best_sector2_lap_num: number;
+  declare best_sector2_lap_num: number;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public best_sector3_lap_num: number;
+  declare best_sector3_lap_num: number;
 }
 
 export default SessionHistory;

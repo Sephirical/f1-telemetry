@@ -5,45 +5,45 @@ class FinalClassficiation extends Model {
   @PrimaryKey
   @AllowNull(false)
   @Column(DataType.BIGINT.UNSIGNED)
-  public session_uid: number;
+  declare session_uid: number;
 
   @PrimaryKey
   @AllowNull(false)
   @Column(DataType.TINYINT.UNSIGNED)
-  public index: number;
+  declare index: number;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public position: number;
+  declare position: number;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public num_laps: number;
+  declare num_laps: number;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public grid_position: number;
+  declare grid_position: number;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public points: number;
+  declare points: number;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public num_pitstops: number;
+  declare num_pitstops: number;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public result_status: number;
+  declare result_status: number;
 
   @Column(DataType.INTEGER.UNSIGNED)
-  public best_laptime: number;
+  declare best_laptime: number;
 
   @Column(DataType.DOUBLE)
-  public total_racetime: number;
+  declare total_racetime: number;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public penalties_time: number;
+  declare penalties_time: number;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public num_penalties: number;
+  declare num_penalties: number;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public num_tyrestints: number;
+  declare num_tyrestints: number;
 }
 
 export default FinalClassficiation;

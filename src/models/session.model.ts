@@ -5,37 +5,37 @@ class Session extends Model {
   @PrimaryKey
   @AllowNull(false)
   @Column(DataType.BIGINT.UNSIGNED)
-  declare public uid: number;
+  declare uid: number;
 
   @CreatedAt
-  created_at: Date;
+  declare created_at: Date;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public playercar_index: number;
+  declare playercar_index: number;
 
   @Column(DataType.TINYINT)
-  public track_id: number;
+  declare track_id: number;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public formula: number;
+  declare formula: number;
 
   @Column(DataType.BOOLEAN)
-  public network_game: boolean;
+  declare network_game: boolean;
 
   @Column(DataType.INTEGER.UNSIGNED)
-  public season_link: number;
+  declare season_link: number;
 
   @Column(DataType.INTEGER.UNSIGNED)
-  public weekend_link: number;
+  declare weekend_link: number;
 
   @Column(DataType.INTEGER.UNSIGNED)
-  public session_link: number;
+  declare session_link: number;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public gamemode: number;
+  declare gamemode: number;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public ruleset: number;
+  declare ruleset: number;
 }
 
 export default Session;

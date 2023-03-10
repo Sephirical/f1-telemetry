@@ -6,103 +6,103 @@ class CarDamage extends Model {
   @AllowNull(false)
   @AutoIncrement
   @Column(DataType.BIGINT.UNSIGNED)
-  declare public id: number;
+  declare id: number;
   
   @Column(DataType.BIGINT.UNSIGNED)
-  public session_uid: number;
+  declare session_uid: number;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public index: number;
+  declare index: number;
 
   @Column(DataType.FLOAT)
-  public rl_tyrewear: number;
+  declare rl_tyrewear: number;
 
   @Column(DataType.FLOAT)
-  public rr_tyrewear: number;
+  declare rr_tyrewear: number;
 
   @Column(DataType.FLOAT)
-  public fl_tyrewear: number;
+  declare fl_tyrewear: number;
 
   @Column(DataType.FLOAT)
-  public fr_tyrewear: number;
+  declare fr_tyrewear: number;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public rl_tyredamage: number;
+  declare rl_tyredamage: number;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public rr_tyredamage: number;
+  declare rr_tyredamage: number;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public fl_tyredamage: number;
+  declare fl_tyredamage: number;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public fr_tyredamage: number;
+  declare fr_tyredamage: number;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public rl_brakedamage: number;
+  declare rl_brakedamage: number;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public rr_brakedamage: number;
+  declare rr_brakedamage: number;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public fl_brakedamage: number;
+  declare fl_brakedamage: number;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public fr_brakedamage: number;
+  declare fr_brakedamage: number;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public fl_wingdamage: number;
+  declare fl_wingdamage: number;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public fr_wingdamage: number;
+  declare fr_wingdamage: number;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public rear_wingdamage: number;
+  declare rear_wingdamage: number;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public floor_damage: number;
+  declare floor_damage: number;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public diffuser_damage: number;
+  declare diffuser_damage: number;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public sidepod_damage: number;
+  declare sidepod_damage: number;
 
   @Column(DataType.BOOLEAN)
-  public drs_fault: boolean;
+  declare drs_fault: boolean;
 
   @Column(DataType.BOOLEAN)
-  public ers_fault: boolean;
+  declare ers_fault: boolean;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public gearbox_damage: number;
+  declare gearbox_damage: number;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public engine_damage: number;
+  declare engine_damage: number;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public mguh_wear: number;
+  declare mguh_wear: number;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public es_wear: number;
+  declare es_wear: number;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public ce_wear: number;
+  declare ce_wear: number;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public ice_wear: number;
+  declare ice_wear: number;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public mguk_wear: number;
+  declare mguk_wear: number;
 
   @Column(DataType.TINYINT.UNSIGNED)
-  public tc_wear: number;
+  declare tc_wear: number;
 
   @Column(DataType.BOOLEAN)
-  public engine_blown: boolean;
+  declare engine_blown: boolean;
 
   @Column(DataType.BOOLEAN)
-  public engine_seized: boolean;
+  declare engine_seized: boolean;
 }
 
 export default CarDamage;
